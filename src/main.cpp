@@ -1,7 +1,6 @@
-// COMP-10184
 // External LED Wiring, PIR Sensor Test Program
 //
-// @author I, Rawad Haddad (000777218), certify that this material is my original work. No other person's work has been used without due acknowledgement and I have not made my work available to anyone else.
+// @author PoofyPloop
 
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -56,8 +55,6 @@ void setup()
   attachInterrupt(digitalPinToInterrupt(PIN_PIR), isr, CHANGE);
 
   Serial.println("\nAsync Events");
-  Serial.println("Rawad Haddad");
-  Serial.println("000777218");
 }
 
 void loop()
